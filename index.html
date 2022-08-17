@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In </title>
+
+
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+            background: white;
+            background-image: linear-gradient(rgba(0, 0, 40, 0.9), rgba(0, 0, 40, 0.9)), url(e.jpg);
+        }
+        
+        .login-box {
+            width: 280px;
+            transform: translate(220%, 50%);
+            color: #fff;
+        }
+        
+        .login-box h1 {
+            float: left;
+            font-size: 40px;
+            border-bottom: 7px solid red;
+            margin-bottom: 40px;
+            padding: 8px;
+        }
+        
+        .btn {
+            border: none;
+            outline: none;
+            background-color: #0f874b;
+            font-size: 18px;
+            width: 80%;
+            float: left;
+            margin: 0 10px;
+            color: #fff;
+            width: 7cm;
+        }
+        
+        .operator {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 18px;
+            width: 80%;
+            float: left;
+            margin: 0 10px;
+            width: 7cm;
+            color: #fff;
+        }
+        
+        .textbox {
+            width: 100%;
+            overflow: hidden;
+            font-size: 20px;
+            padding: 6px 0;
+            margin: 10px 0;
+            border-bottom: 1px solid #00ff80;
+            color: #fff;
+        }
+        
+        .textbox input {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 18px;
+            width: 80%;
+            float: left;
+            margin: 0 10px;
+            color: #fff;
+        }
+        
+        a {
+            border-bottom: 2px solid #00ff40;
+            color: white;
+            font-size: 23px;
+            transform: translate(250%, 50%);
+        }
+    </style>
+
+</head>
+
+<body onload='document.form1.Email.focus()'>
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <form action="/lop" method="POST" name="form1">
+                    <div class="login-box" method="post">
+                        <h1>LOG IN </h1>
+                        <div class="textbox">
+                            <input type="text" placeholder="Name" name="name" id="name">
+                        </div>
+                        <div class="mail textbox">
+                            <input type="text" placeholder="Email" name="email" id="email">
+                        </div>
+                        <div class="textbox">
+                            <input type="number" placeholder="Number" name="number" id="number">
+                        </div>
+                        <div class="textbox ">
+                            <select name="country" id="country" id="country" class="operator">
+                        <option>select the country</option>
+                        <option>India</option>
+                        <option>U.S.A</option>
+                        <option>China</option>
+                        <option>Pakistan</option>
+                        <option>Russia</option>
+                        <option>Saudi Arabia</option>
+                        <option>South Africa</option>
+                    </select>
+                        </div>
+                        <div class="textbox">
+                            <button class="btn btn-primary" onclick="validate()" type="submit">
+                    Submit
+                </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function validate() {
+            var name = document.getElementById("name").value;
+            var number = document.getElementById("number").value;
+            var country = document.getElementById("country").value;
+            if (name == "" || number == "" || country == "") {
+                alert("No Blank Value Allowed");
+                return false;
+            } else {
+                return true;
+            }
+        }
+    </script>
+
+</body>
+
+</html>

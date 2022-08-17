@@ -16,6 +16,10 @@ Runing in Port: http://localhost:3000/
 
 Phone website
 
+src folder have app.js,User.js
+and in src folder create pulice folder 
+publice folder have home.html,phone.html,index.html and all images
+
 
 ![Screenshot (286)](https://user-images.githubusercontent.com/61671277/185173697-790ecb17-3c51-4290-953f-13c3dcd910d1.png)
 ![Screenshot (287)](https://user-images.githubusercontent.com/61671277/185173709-5085c061-bf1f-412b-97e2-cba119fe2620.png)
